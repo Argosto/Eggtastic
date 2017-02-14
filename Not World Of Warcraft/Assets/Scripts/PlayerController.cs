@@ -17,12 +17,5 @@ public class PlayerController : MonoBehaviour
         Vector3 movement = new Vector3(moveHorizontal, 0.0f, moveVertical);
         rb.AddForce(movement * speed);
     }
-void OnTriggerEnter(Collider other)
-{
-    if (other.tag == "Wall")
-    {
-        Time.timeScale = 0;
-    }
-}
 }
 
